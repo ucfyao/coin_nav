@@ -1,7 +1,7 @@
 <template>
   <section class="admin">
     <header class="admin-header">
-      <h2>极客猿梦导航后台</h2>
+      <h2>最牛后台</h2>
     </header>
     <el-table :data="tableData">
       <el-table-column label="提交日期" width="180">
@@ -32,8 +32,8 @@
       </el-table-column>
       <el-table-column label="操作">
         <template slot-scope="scope">
-          <el-button size="mini" @click="openDialog(0, scope.row._id)">通过</el-button>
-          <el-button size="mini" type="danger" @click="openDialog(1, scope.row._id)">拒绝</el-button>
+            <el-button size="mini" @click="openDialog(0, scope.row._id, scope.$index)">通过</el-button>
+            <el-button size="mini" type="danger" @click="openDialog(1, scope.row._id, scope.$index)">拒绝</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -52,27 +52,23 @@ export default {
       const res = await this.$api.getAuditList();
       this.tableData = res.data.data;
     },
-    openDialog(index, id) {
+  openDialog(type, id, index) {
       // const that = this;
-      if (index) {
+      if (type) {
         // 拒绝
         this.$confirm("确认拒绝这个提交？")
           .then((_) => {
             // console.log(_);
             this.$message('删除成功');
-            this.delNav(id)
-            this.getData()
+            this.delNav(id);
+            this.tableData.splice(index, 1);
           })
           .catch(() => {
             // console.log(_);
           });
       } else {
         const filterData = this.tableData.filter(item => item._id == id)[0];
-        // debugger
-        const {
-          classify,
-          name, href, desc, logo
-        } = filterData;
+        const { classify, name, href, desc, logo, _id } = filterData;
         const data = {
           classify: classify,
           icon: "el-icon-edit",
@@ -87,7 +83,7 @@ export default {
           .then(_ => {
             this.$message('添加成功');
             this.addNav(data);
-            this.getData()
+            this.tableData.splice(index, 1);
           })
           .catch(_ => {});
       }
