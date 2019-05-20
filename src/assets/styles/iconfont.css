@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'iconfont';  /* project id 552690 */
-  src: url('//at.alicdn.com/t/font_552690_glv40xqyj51xlxr.eot');
-  src: url('//at.alicdn.com/t/font_552690_glv40xqyj51xlxr.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_552690_glv40xqyj51xlxr.woff') format('woff'),
-  url('//at.alicdn.com/t/font_552690_glv40xqyj51xlxr.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_552690_glv40xqyj51xlxr.svg#iconfont') format('svg');
+  font-family: 'iconfont';  /* project id 1201211 */
+  src: url('//at.alicdn.com/t/font_1201211_4acfofqhujm.eot');
+  src: url('//at.alicdn.com/t/font_1201211_4acfofqhujm.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1201211_4acfofqhujm.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1201211_4acfofqhujm.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1201211_4acfofqhujm.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1201211_4acfofqhujm.svg#iconfont') format('svg');
 }
-
 .iconfont {
   font-family:"iconfont" !important;
   font-size:16px;
@@ -15,32 +15,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-shequ:before { content: "\e600"; }
+.icon-zixun:before { content: "\e64d"; }
 
-.icon-designer:before { content: "\e613"; }
+.icon-jiaoyisuo_icon:before { content: "\e61f"; }
 
-.icon-wendangdocument78:before { content: "\e723"; }
+.icon-jiaoyisuo1:before { content: "\e68c"; }
 
-.icon-blogger:before { content: "\e6a4"; }
+.icon-hangqing:before { content: "\e63f"; }
 
-.icon-daohang2:before { content: "\e614"; }
+.icon-gongju:before {content: "\e604";}
 
-.icon-liuyan:before { content: "\e638"; }
-
-.icon-tool:before { content: "\e64d"; }
-
-.icon-xuexi1:before { content: "\e63b"; }
-
-.icon-zixun:before { content: "\e6af"; }
-
-.icon-yunying:before { content: "\e6aa"; }
-
-.icon-daohang:before { content: "\e611"; }
-
-.icon-github:before { content: "\e601"; }
-
-.icon-daohang1:before { content: "\e63d"; }
-
-.icon-xuexi:before { content: "\e604"; }
-
-.icon-jiahao:before { content: "\e86a"; }
+.icon-tool:before {content: "\e605";}
+.icon-currencyexchangefilled:before {content: "\e608";}
+.icon-exchange_px:before {content: "\e947";}
