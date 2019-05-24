@@ -22,6 +22,6 @@ http://localhost:8080
 
 // 如果使用pm 管理
 pm2 start npm --name coin_nav_web -- run serve
-pm2 start --name coin_nav_node server/app.js 
+pm2 start --name coin_nav_node server/app.js
 
 ```
