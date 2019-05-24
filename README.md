@@ -21,7 +21,7 @@ nohup npm run dev >/dev/null 2>&1 &
 http://localhost:8080
 
 // 如果使用pm 管理
-pm2 start npm --name coin_nav_web -- run serve
-pm2 start --name coin_nav_node server/app.js
+pm2 start npm --name coin_nav_web -- run serve --env production
+pm2 start --name coin_nav_node server/app.js --env production
 
 ```
