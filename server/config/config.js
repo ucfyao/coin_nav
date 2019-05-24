@@ -12,7 +12,7 @@ module.exports = appInfo => {
 			}
 		},
 		mongoose: {
-			url: 'mongodb://127.0.0.1:27017/arbitrage',
+			url: 'mongodb://127.0.0.1:20000/navData',
 			options: {},
 		}
 	}
