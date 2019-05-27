@@ -24,4 +24,8 @@ http://localhost:8080
 pm2 start npm --name coin_nav_web -- run serve --env production
 pm2 start --name coin_nav_node server/app.js --env production
 
+// 每次更新执行
+pm2 restart coin_nav_web
+pm2 restart coin_nav_node
+
 ```
